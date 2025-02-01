@@ -13,7 +13,7 @@ import { ConfigService } from '@nestjs/config';
     ConfigModule.forRoot({
       isGlobal: true,
       cache: true,
-      envFilePath: `env/.env.${process.env.NODE_ENV}`,
+      envFilePath: 'env/.env',
       load: [config],
     }),
     JwtModule.registerAsync({
